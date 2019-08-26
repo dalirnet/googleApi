@@ -96,6 +96,8 @@ class MyAnalyticsReport
         $this->addMetric("ga:impressions", "impressions");
         $this->addMetric("ga:adClicks", "clicks");
         $this->addMetric("ga:adCost", "cost");
+        $this->addMetric("ga:sessions", "sessions");
+        $this->addMetric("ga:users", "users");
         //
         $result = $this->request();
         echo json_encode($result);
